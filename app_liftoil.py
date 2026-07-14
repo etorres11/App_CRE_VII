@@ -95,7 +95,7 @@ if seccion == "🏠 Inicio":
 elif seccion == "Compresor Oil & Gas":
 
 # Configura aquí el nombre exacto de tu archivo local
-    RUTA_ARCHIVO = r"C:\Users\Produccion-Liftoil\OneDrive\Lift_Oil\Power_BI\10.- Aprende a Programar con Python. Practicando con proyectos\04.- Streamlit\VII..xlsx"
+    RUTA_ARCHIVO = r"VII..xlsx"
 
     st.write("### Pozos en Evaluación")
 
