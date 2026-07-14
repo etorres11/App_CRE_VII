@@ -3,3 +3,4 @@ plotly>=2.0.9
 openpyxl
 streamlit
 lasio>=0.32
+matplolib>=3.11.0
