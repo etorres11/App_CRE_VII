@@ -40,14 +40,6 @@ secciones = [
     "🏠 Inicio",
     "Compresor Oil & Gas"
 ]
-
-seccion = st.sidebar.selectbox("Selecciona una sección", secciones)
-
-if seccion == "🏠 Inicio":
-    st.title("Aplicación de Pruebas con Compresor Reciprocante Externo (CRE)")
-    st.image("CRE.png")
-    st.write("Aquí mostraremos los pozos que cuentan con telemtría")
-
 # Código del Reloj Estilizado para la Barra Lateral
 with st.sidebar:
     st.write("---")  # Línea divisoria
@@ -93,15 +85,24 @@ with st.sidebar:
     # Renderizar el componente web dentro del sidebar
     components.html(reloj_html, height=100)
 
-# Configura aquí el nombre exacto de tu archivo local
-RUTA_ARCHIVO = r"VII..xlsx"
+seccion = st.sidebar.selectbox("Selecciona un Módulo", secciones)
 
-st.write("### Pozos en Evaluación")
+if seccion == "🏠 Inicio":
+    st.title("Aplicación de Pruebas con Compresor Reciprocante Externo (CRE)")
+    st.image("CRE.png")
+    st.write("Medición de Presiones durante la evaluación del CRE")
+
+elif seccion == "Compresor Oil & Gas":
+
+# Configura aquí el nombre exacto de tu archivo local
+    RUTA_ARCHIVO = r"C:\Users\Produccion-Liftoil\OneDrive\Lift_Oil\Power_BI\10.- Aprende a Programar con Python. Practicando con proyectos\04.- Streamlit\VII..xlsx"
+
+    st.write("### Pozos en Evaluación")
 
 # Verificar si el archivo realmente existe en la carpeta del script
-if os.path.exists(RUTA_ARCHIVO):
-    es_excel = RUTA_ARCHIVO.endswith('.xlsx')
-    pozo_seleccionado = None
+    if os.path.exists(RUTA_ARCHIVO):
+        es_excel = RUTA_ARCHIVO.endswith('.xlsx')
+        pozo_seleccionado = None
     
     # Lógica para leer múltiples hojas si es un archivo Excel local
     if es_excel:
