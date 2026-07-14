@@ -38,7 +38,7 @@ st.markdown('<h1 class="title notranslate" translate="no">LIFTOIL SOLUTIONS SAC<
 
 secciones = [
     "🏠 Inicio",
-    "Funciones Oil & Gas"
+    "Compresor Oil & Gas"
 ]
 
 seccion = st.sidebar.selectbox("Selecciona una sección", secciones)
@@ -46,7 +46,7 @@ seccion = st.sidebar.selectbox("Selecciona una sección", secciones)
 if seccion == "🏠 Inicio":
     st.title("Aplicación de Pruebas con Compresor Reciprocante Externo (CRE)")
     st.image("CRE.png")
-    st.write("Aquí explicamos el objetivo de la app.")
+    st.write("Aquí mostraremos los pozos que cuentan con telemtría")
 
 # Código del Reloj Estilizado para la Barra Lateral
 with st.sidebar:
