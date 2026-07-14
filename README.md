@@ -1,4 +1,4 @@
-# App_CRE_VII
+# Aplicaciones de Compresores Reciprocantes Externos Lote VII
 Pozos en Evaluación
 
 ![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)
